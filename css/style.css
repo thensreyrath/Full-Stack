@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.menu{
+    display: flex;
+    list-style:none;
+   
+}
+.nav-item{
+    text-decoration: none;
+    padding: 20px;
+    color: bisque;
+    display: block;
+}
+.nav-item:hover{
+    color: orange;
+    font-size: 18px;
+}
+.logo{
+    width: 60px;
+    height: 120px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    /* height: auto;
+    align-items: center;
+    display: flex; */
+}
