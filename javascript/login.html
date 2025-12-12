@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Login</title>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+</style>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <input id="username" type="text" placeholder="Username" />
+            <input id="password" type="password" placeholder="Password" />
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+  let nameElement = document.getElementById("username");
+  const passwordElement = document.getElementById("password");
+
+  const login = () => {
+    console.log(login);
+    const name = nameElement.value;
+    const password = passwordElement.value;
+    console.log("UserName:", name);
+    console.log("Password:", password);
+  };
+</script>
