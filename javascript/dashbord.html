@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="">
+    <title>Dashbord</title>
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold">📦 Product Dashboard</h4>
+            <!-- <button class="btn btn-primary"></button> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add Product
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label fw-medium">Product Name</label>
+                                    <input type="text" class="form-control" value="Iphone 17 pro max">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-medium">Price</label>
+                                    <input type="number" class="form-control" value="1500">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-medium">Color</label>
+                                    <select class="form-select">
+                                    <option>White</option>
+                                    <option>Black</option>
+                                    <option>Blue</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-medium">Category</label>
+                                    <select class="form-select">
+                                    <option>Phones</option>
+                                    <option>Laptop</option>
+                                    <option>Accessories</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label fw-medium">Description</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="card shadow-sm">
+            <div class="card-body">
+            <!-- Filters -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Search product...">
+                    </div>
+                    <div class="col-md-3 ms-auto">
+                        <select class="form-select">
+                            <option selected>All Categories</option>
+                            <option>Laptop</option>
+                            <option>Phones</option>
+                        </select>
+                    </div>
+                </div>
+            <!-- Table -->
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Color</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th class="text-end">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Product 1</td>
+                                <td>Blue</td>
+                                <td>Laptop</td>
+                                <td>$20</td>
+                                <td class="text-end">
+                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</body>
+</html>
